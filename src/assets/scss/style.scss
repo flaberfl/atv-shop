@@ -1,0 +1,39 @@
+@import "mixins";
+@import "vars";
+@import "fonts";
+@import "vendor/reset";
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  // min-width: 32rem;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: $primary;
+
+  overflow-x: hidden;
+}
+
+@import "blocks/page";
+@import "blocks/header";
+@import "blocks/container";
+@import "blocks/logo";
+@import "blocks/phone";
+@import "blocks/advantages";
+@import "blocks/btn";
+@import "blocks/sidebar";
+@import "blocks/nav";
+@import "blocks/content";
+@import "blocks/main";
+@import "blocks/category";
+@import "blocks/gift";
+

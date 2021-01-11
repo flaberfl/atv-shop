@@ -1,0 +1,32 @@
+.header {
+  margin-bottom: 8rem;
+  background-color: $background;
+
+  border: 1px solid black;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5rem 9.3rem 6rem;
+}
+
+.header__content {
+  padding-left: 18rem;
+  position: relative;
+}
+
+.header__title {
+  margin-bottom: 4.5rem;
+  max-width: 61rem;
+
+  font-size: 3.2rem;
+  letter-spacing: -.4px;
+  line-height: 4.2rem;
+}
+
+.header__img {
+  position: absolute;
+  right: 0;
+  top: 0;
+}

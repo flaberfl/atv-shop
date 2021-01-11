@@ -1,0 +1,14 @@
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content__title {
+  margin: 2.5rem 0 5.5rem;
+
+  font-size: 3.2rem;
+  font-weight: 800;
+  letter-spacing: -.2px;
+  // color: $primary;
+
+}

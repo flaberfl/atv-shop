@@ -1,0 +1,18 @@
+.nav {
+  position: sticky;
+  top: 0;
+}
+
+.nav__link {
+  display: block;
+  padding-left: 12.3rem;
+
+
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 8rem;
+
+  &.active {
+    background-color: $background;
+  }
+}
