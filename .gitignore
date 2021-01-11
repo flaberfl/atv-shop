@@ -15,3 +15,5 @@ logs/
 celerybeat-schedule                                                                     
 .ipynb_checkpoints
 venv/
+dist/
+**/dist/
