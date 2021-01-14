@@ -23,6 +23,10 @@ body {
   overflow-x: hidden;
 }
 
+.border {
+  border: 1px solid red;
+}
+
 @import "blocks/page";
 @import "blocks/header";
 @import "blocks/container";

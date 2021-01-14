@@ -1,95 +1,146 @@
-.gift {
-  // padding-top: 67px;
-
-  &__title {
-      font-size: 25px;
-      font-weight: 800;
-      line-height: 34px;
-      margin-bottom: 27px;
-      padding-left: 20px;
+  .gift__content {
+    display: flex;
+    justify-content: space-between;
   }
 
-  &__info {
-      position: relative;
-      background-color: #EDF1F7;
-      text-align: center;
-      padding-top: 52px;
+  
 
-      &-img {
-          background-color: #fff;
-          padding-top: 31px;
-      }
+  .gift__column-left {
+    flex-basis: 50%;
 
-      &-text {
-          position: absolute;
-          font-size: 9px;
-          font-weight: 400;
-          line-height: 12px;
-          background-color: #fff;
-          width: 144px;
-          left: 50%;
-          bottom: 55px;
-          transform: translateX(-50%);
-          text-align: start;
-      }
+    background-color: $background;
   }
 
-  &__electron {
-      background-color: #EDF1F7;
-      padding-top: 15px;
-      padding-bottom: 38px;
+  .gift__preview-inner {
+    position: relative;
 
-      &-title {
-          margin-bottom: 11px;
-      }
+    img {
+      display: block;
+      margin-top: 4.8rem;
+      margin-left: auto;
+      margin-right: auto;
 
-      &-text {
-          width: 245px;
-      }
+      padding: 3.4rem 3.4rem 0;
+
+      background: $white;
+
+    }
   }
 
-  &__print-card {
-      padding-top: 51px;
+  .gift__preview-text {
+    position: absolute;
+    
+    width: 14.4rem;
 
-      &-img {
-          margin-bottom: 15px;
-          width: 100%;
-      }
+    top: 50%;
+    right: 50%;
+    transform: translateX(50%);
 
-      &-title {
 
-          font-size: 14px;
-          font-weight: 700;
-          line-height: 19px;
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 1.2rem;
 
-          margin-bottom: 13px;
-          padding-left: 35px; // Потом оптимизирую
-      }
+    background-color: $white;
 
-      &-text {
-          font-size: 14px;
-          font-weight: 400;
-          line-height: 19px;
-          padding-left: 35px;
-
-          width: 260px;
-      }
-  }
-
-  &-title {
-      font-size: 14px;
-      font-weight: 700;
-      line-height: 19px;
-      padding-left: 15px;
-  }
-
-  &-text {
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 19px;
-      padding-left: 15px;
-      // width: 245px;
 
   }
 
-}
+  .gift__column-right {
+    flex-basis: 50%;
+  }
+
+
+  // &__title {
+  //   font-size: 25px;
+  //   font-weight: 800;
+  //   line-height: 34px;
+  //   margin-bottom: 27px;
+  //   padding-left: 20px;
+  // }
+
+  // &__info {
+  //   // preview
+  //   position: relative;
+  //   background-color: #EDF1F7;
+  //   text-align: center;
+  //   padding-top: 52px;
+
+  //   &-img {
+  //     background-color: #fff;
+  //     padding-top: 31px;
+  //   }
+
+  //   &-text {
+  //     position: absolute;
+  //     font-size: 9px;
+  //     font-weight: 400;
+  //     line-height: 12px;
+  //     background-color: #fff;
+  //     width: 144px;
+  //     left: 50%;
+  //     bottom: 55px;
+  //     transform: translateX(-50%);
+  //     text-align: start;
+  //   }
+  // }
+
+  // &__electron {
+  //   background-color: #EDF1F7;
+  //   padding-top: 15px;
+  //   padding-bottom: 38px;
+
+  //   &-title {
+  //     margin-bottom: 11px;
+  //   }
+
+  //   &-text {
+  //     width: 245px;
+  //   }
+  // }
+
+  // &__print-card {
+  //   padding-top: 51px;
+
+  //   &-img {
+  //     margin-bottom: 15px;
+  //     width: 100%;
+  //   }
+
+  //   &-title {
+
+  //     font-size: 14px;
+  //     font-weight: 700;
+  //     line-height: 19px;
+
+  //     margin-bottom: 13px;
+  //     padding-left: 35px; // Потом оптимизирую
+  //   }
+
+  //   &-text {
+  //     font-size: 14px;
+  //     font-weight: 400;
+  //     line-height: 19px;
+  //     padding-left: 35px;
+
+  //     width: 260px;
+  //   }
+  // }
+
+  // &-title {
+  //   font-size: 14px;
+  //   font-weight: 700;
+  //   line-height: 19px;
+  //   padding-left: 15px;
+  // }
+
+  // &-text {
+  //   font-size: 14px;
+  //   font-weight: 400;
+  //   line-height: 19px;
+  //   padding-left: 15px;
+  //   // width: 245px;
+
+  // }
+
+  // }
