@@ -1,19 +1,20 @@
 .header {
   margin-bottom: 8rem;
-  background-color: $background;
-
-  border: 1px solid black;
 }
 
 .header__top {
   display: flex;
   justify-content: space-between;
   padding: 0 5rem 9.3rem 6rem;
+  
+  background-color: $background;
 }
 
 .header__content {
   padding-left: 18rem;
   position: relative;
+
+  background-color: $background;
 }
 
 .header__title {

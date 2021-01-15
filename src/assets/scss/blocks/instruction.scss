@@ -1,0 +1,29 @@
+.instruction {
+  margin-bottom: 8rem;
+
+  order: 1;
+}
+
+.instruction__items {
+  display: flex;
+  padding: 4rem 0 4.7rem;
+
+  background-color: $background;
+}
+
+.instruction__item {
+  text-align: center;
+
+  img {
+    margin-bottom: 2.6rem;
+  }
+
+  p {
+    display: inline-block;
+    width: 17rem;
+
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: $line-heigt-text;
+  }
+}
