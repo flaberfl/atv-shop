@@ -1,7 +1,7 @@
 let tabsNav = document.querySelector('.nav') // Родитель линков
-let tabsCategory = document.querySelector('.category') // Родитель таб-контента
+let tabsContent = document.querySelector('.category') // Родитель таб-контента
 let navLink = tabsNav.querySelectorAll('.nav__item')   // Линки
-let items = tabsCategory.querySelectorAll('.category__items') // Таб-контент
+let items = tabsContent.querySelectorAll('.category__items') // Таб-контент
 
 function change(arr, i) {
 	arr.forEach( item => {
