@@ -1,0 +1,32 @@
+.map {
+  margin-bottom: 5.5rem;
+  position: relative;
+  overflow: hidden;
+
+  img:nth-child(2) {
+    display: none;
+  }
+}
+
+.map__text {
+    position: absolute;
+    content: "";
+    width: 100%;
+    min-height: 5.3rem;
+    bottom: 0;
+
+    font-size: 14px;
+    font-weight: 400;
+    background: #fff;
+    opacity: 0.8;
+    text-align: right;
+
+    p {
+      display: inline-block;
+      max-width: 31rem;
+      padding-right: 1.2rem;
+      padding-top: .3rem;
+
+      line-height: $line-height-text;
+    }
+}

@@ -23,7 +23,7 @@
 
   font-size: 14px;
   font-weight: 400;
-  ight: 19px;
+  line-height: $line-height-text;
 
   span {
     font-weight: 700;
@@ -69,7 +69,7 @@
 .category__item-image {
   position: relative;
 
-  &--notbef {
+  &--nbefore {
     &:before {
       display: none;
     }
@@ -88,6 +88,7 @@
 
   img {
     display: block;
+    height: 100%;
   }
 }
 
@@ -114,7 +115,7 @@
 
 .category__title {
   font-size: 18px;
-  ight: 23px;
+  line-height: 2.3rem;
 }
 
 .category__item-list {
