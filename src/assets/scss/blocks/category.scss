@@ -23,7 +23,7 @@
 
   font-size: 14px;
   font-weight: 400;
-  line-height: 19px;
+  ight: 19px;
 
   span {
     font-weight: 700;
@@ -69,6 +69,12 @@
 .category__item-image {
   position: relative;
 
+  &--notbef {
+    &:before {
+      display: none;
+    }
+  }
+
   &:before {
     position: absolute;
     content: "";
@@ -108,7 +114,7 @@
 
 .category__title {
   font-size: 18px;
-  line-height: 23px;
+  ight: 23px;
 }
 
 .category__item-list {
@@ -127,7 +133,7 @@
   p {
     font-size: 14px;
     font-weight: 400;
-    line-height: 16px;
+    line-height: $line-height-text ;
   }
 }
 
