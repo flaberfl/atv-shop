@@ -25,6 +25,25 @@ title: Маршруты
 
   </div> <!-- /category__intro -->
 
+  <div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+      ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination">pag</div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+
+  </div>
+
   <div class="category__item">
     <div class="category__item-image category__item-image--nbefore">
       <img src="assets/images/atv.jpg" alt="Квадроцикл">
@@ -50,6 +69,7 @@ title: Маршруты
   <div class="map">
     <img src="assets/images/map.jpg" alt="Карта проезда">
     <img src="assets/images/map.jpg" alt="Карта проезда">
+    <span><img src="./assets/images/svg/map-marker.svg" alt=""></span>
     <div class="map__text">
       <p>
         Город Москва, улица Центральная, дом 10
@@ -61,8 +81,8 @@ title: Маршруты
   <div class="select__date">
     <div class="content__title">Выберите желаемую дату и время катания</div>
     <div class="select__date-group">
-      <a class="btn btn--main" href="#">Выбери время</a>
-      <a class="btn btn--main" href="#">Выбери дату</a>
+      <a class="btn btn--select" href="#">Выбери время</a>
+      <a class="btn btn--select" href="#">Выбери дату</a>
     </div>
   </div>
 
@@ -239,13 +259,30 @@ title: Маршруты
 
   </div>
 
+  <div class="instruction">
+    <div class="instruction__items">
+      <div class="instruction__item">
+        <img src="assets/images/svg/one 1.svg" alt="">
+        <p>Выбираете маршрут на нашем сайте</p>
+      </div>
+      <div class="instruction__item">
+        <img src="assets/images/svg/two 1.svg" alt="">
+        <p>Бронируете маршрут онлайн</p>
+      </div>
+      <div class="instruction__item">
+        <img src="assets/images/svg/three 1.svg" alt="">
+        <p>Получаете онлайн билет на ваш телефон</p>
+      </div>
 
+    </div>
 
-  <div class="route__instruction" id="route__instruction">
+  </div>
 
-    <div class="route-title category__title">Как будет происходить катание?</div>
+  <div class="howto">
 
-    <div class="route-text">
+    <h3 class="content__title">Как будет происходить катание?</h3>
+
+    <div class="howto__text">
       <p>1. Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1
       </p>
       <p>2. Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1
@@ -260,33 +297,36 @@ title: Маршруты
 
   </div>
 
-  <div class="slider-photo-wrapper" id="slider-photo-wrapper">
-    <div class="route__photo">
-      <div class="route__photo-title category__title">Фотографии с катаний</div>
+  <div class="slider-photo">
+
+    <h3 class="content__title">Фотографии с катаний</h3>
+
+    <!-- <div class="slider-photo-mobile">
       <div class="route__photo-slider owl-carousel" id="photoSlider">
-        <img class="route__photo-item" src="{% static static_prefix|add:'../img/atv__img.jpg' %}" alt="">
-        <img class="route__photo-item" src="{% static static_prefix|add:'../img/atv__img.jpg' %}" alt="">
-        <img class="route__photo-item" src="{% static static_prefix|add:'../img/atv__img.jpg' %}" alt="">
-        <img class="route__photo-item" src="{% static static_prefix|add:'../img/atv__img.jpg' %}" alt="">
-        <img class="route__photo-item" src="{% static static_prefix|add:'../img/atv__img.jpg' %}" alt="">
-        <img class="route__photo-item" src="{% static static_prefix|add:'../img/atv__img.jpg' %}" alt="">
-        <img class="route__photo-item" src="{% static static_prefix|add:'../img/atv__img.jpg' %}" alt="">
+        <img class="route__photo-item" src="assets/images/atv.jpg" alt="Слайд1">
+        <img class="route__photo-item" src="assets/images/atv.jpg" alt="Слайд2">
+        <img class="route__photo-item" src="assets/images/atv.jpg" alt="Слайд3">
+        <img class="route__photo-item" src="assets/images/atv.jpg" alt="Слайд4">
+        <img class="route__photo-item" src="assets/images/atv.jpg" alt="Слайд5">
+        <img class="route__photo-item" src="assets/images/atv.jpg" alt="Слайд6">
+        <img class="route__photo-item" src="assets/images/atv.jpg" alt="Слайд7">
+      </div>
+    </div> -->
+
+    <div class="slider-photo-desktop">
+      <div class="route__photo-slider owl-carousel" id="photoSlider1">
+        <img class="route__photo-item" src="assets/images/atv_desktop.jpg" alt="Слайд1">
+        <img class="route__photo-item" src="assets/images/atv_desktop.jpg" alt="Слайд2">
+        <img class="route__photo-item" src="assets/images/atv_desktop.jpg" alt="Слайд3">
+        <img class="route__photo-item" src="assets/images/atv_desktop.jpg" alt="Слайд4">
+        <img class="route__photo-item" src="assets/images/atv_desktop.jpg" alt="Слайд5">
+        <img class="route__photo-item" src="assets/images/atv_desktop.jpg" alt="Слайд6">
+        <img class="route__photo-item" src="assets/images/atv_desktop.jpg" alt="Слайд7">
       </div>
     </div>
 
-    <div class="route__photo-desktop">
-      <div class="route__photo-title category__title">Фотографии с катаний</div>
-      <div class="route__photo-slider owl-carousel" id="photoSlider1">
-        <img class="route__photo-item" src="{% static static_prefix|add:'../img/big-photo-slider.jpg' %}" alt="">
-        <img class="route__photo-item" src="{% static static_prefix|add:'../img/big-photo-slider.jpg' %}" alt="">
-        <img class="route__photo-item" src="{% static static_prefix|add:'../img/big-photo-slider.jpg' %}" alt="">
-        <img class="route__photo-item" src="{% static static_prefix|add:'../img/big-photo-slider.jpg' %}" alt="">
-        <img class="route__photo-item" src="{% static static_prefix|add:'../img/big-photo-slider.jpg' %}" alt="">
-        <img class="route__photo-item" src="{% static static_prefix|add:'../img/big-photo-slider.jpg' %}" alt="">
-        <img class="route__photo-item" src="{% static static_prefix|add:'../img/big-photo-slider.jpg' %}" alt="">
-      </div>
-    </div>
-  </div>
+
+  </div><!-- ./slider -->
 
 
 
@@ -322,7 +362,7 @@ title: Маршруты
     </div>
   </div>
 
-<!-- gift -->
+  <!-- gift -->
 
   <div class="route__other">
 
@@ -411,6 +451,8 @@ title: Маршруты
     </div>
 
   </div>
+
+
 
 
 </section>

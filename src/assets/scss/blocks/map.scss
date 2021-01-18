@@ -1,16 +1,29 @@
 .map {
-  margin-bottom: 5.5rem;
   position: relative;
+  margin-bottom: 5rem;
   overflow: hidden;
+
+  img {
+    width: 100%;
+  }
 
   img:nth-child(2) {
     display: none;
   }
+
+  span {
+    position: absolute;
+    width: 3.8rem;
+    height: 3.8rem;
+    top: 27%;
+    left: 46%;
+
+  }
+
 }
 
 .map__text {
     position: absolute;
-    content: "";
     width: 100%;
     min-height: 5.3rem;
     bottom: 0;

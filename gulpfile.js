@@ -128,6 +128,13 @@ function css(cb) {
     }));
 
   cb();
+
+  const modules = [
+    'node_modules/swiper/swiper-bundle.min.css',
+  ];
+
+  return src(modules)
+    .pipe(dest(path.build.css));
 }
 
 function cssWatch(cb) {
@@ -157,6 +164,19 @@ function cssWatch(cb) {
 
   cb();
 }
+
+function vendorCSS(cb) {
+  const modules = [
+    'node_modules/swiper/swiper-bundle.min.css',
+  ];
+
+  return src(modules)
+    .pipe(dest(path.build.css));
+};
+
+cb();
+
+
 
 function js(cb) {
   return src(path.src.js, {
@@ -305,7 +325,7 @@ function watchFiles() {
   gulp.watch([path.watch.fonts], fonts);
 }
 
-const build = gulp.series(clean, gulp.parallel(html, css, js, images, fonts), fontsStyle);
+const build = gulp.series(clean, gulp.parallel(html, css, js, images, fonts, vendorCSS), fontsStyle);
 const watch = gulp.parallel(build, watchFiles, serve);
 
 

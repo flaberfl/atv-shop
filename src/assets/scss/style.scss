@@ -2,6 +2,8 @@
 @import "vars";
 @import "fonts";
 @import "vendor/reset";
+// @import "vendor/swiper-slider";
+// @import "../../../node_modules/swiper/swiper-bundle.css";
 
 *,
 *:before,
@@ -27,6 +29,11 @@ body {
   border: 1px solid red;
 }
 
+.swiper-container {
+  width: 600px;
+  height: 300px;
+}
+
 @import "blocks/page";
 @import "blocks/header";
 @import "blocks/container";
@@ -44,4 +51,5 @@ body {
 @import "blocks/seo";
 @import "blocks/map";
 @import "blocks/select";
+@import "blocks/howto";
 @import "blocks/footer";

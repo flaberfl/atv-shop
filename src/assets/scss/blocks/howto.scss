@@ -1,0 +1,17 @@
+.howto {
+  margin-bottom: 5.5rem;
+}
+
+.howto__text {
+  padding: 3.3rem;
+
+  background: $background;
+
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: $line-height-text;
+
+  p {
+    margin-bottom: 2rem;
+  }
+}
