@@ -30,6 +30,7 @@ const ttf2woff2 = require("gulp-ttf2woff2");
 const srcPath = 'src/';
 const distPath = 'dist/';
 const fs = require('fs');
+const modules = ['node_modules/swiper/swiper-bundle.min.css', ];
 
 const path = {
   build: {
@@ -128,13 +129,6 @@ function css(cb) {
     }));
 
   cb();
-
-  const modules = [
-    'node_modules/swiper/swiper-bundle.min.css',
-  ];
-
-  return src(modules)
-    .pipe(dest(path.build.css));
 }
 
 function cssWatch(cb) {
@@ -166,10 +160,6 @@ function cssWatch(cb) {
 }
 
 function vendorCSS(cb) {
-  const modules = [
-    'node_modules/swiper/swiper-bundle.min.css',
-  ];
-
   return src(modules)
     .pipe(dest(path.build.css));
 };
