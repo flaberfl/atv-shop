@@ -12,7 +12,7 @@
   box-shadow: $shadow;
   border-radius: $btn-radius;
 
-  transition: background-color .2s linear;
+  transition: transform .2s linear;
 
   &--select {
     padding: 1.5rem 2.2rem;
@@ -70,4 +70,9 @@
       transform: translateY(-50%);
     }
   }
+
+  &:hover {
+    transform: scale(1.02);
+  }
+
 }

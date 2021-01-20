@@ -30,7 +30,7 @@ const ttf2woff2 = require("gulp-ttf2woff2");
 const srcPath = 'src/';
 const distPath = 'dist/';
 const fs = require('fs');
-const modules = ['node_modules/swiper/swiper-bundle.min.css', ];
+const modules = 'node_modules/swiper/swiper-bundle.min.css';
 
 const path = {
   build: {

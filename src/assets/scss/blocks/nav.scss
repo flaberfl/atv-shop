@@ -12,14 +12,25 @@
   font-weight: 700;
   line-height: 8rem;
 
-  transition: all .4s ease;
+  a {
+    display: block;
+  }
+
+  p,
+  a {
+    transition: transform .2s linear;
+  }
+
+
+  &:hover {
+
+    p,
+    a {
+      transform: scale(1.02);
+    }
+  }
 
   &.is-active {
     background-color: $background;
   }
-
-  &:hover {
-    background-color: $background;
-  }
-
 }
