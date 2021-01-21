@@ -1,24 +1,50 @@
-import Swiper, { Navigation, Pagination } from 'swiper';
+import Swiper, {
+  Navigation,
+  Pagination
+} from 'swiper';
 
 Swiper.use([Navigation, Pagination]);
 
 const swiper = new Swiper();
 
-
-const mySwiper = new Swiper('.swiper-container', {
+const photoSlider = new Swiper('.photo-slider', {
 
   loop: true,
+  slideToClickedSlide: true,
+  grabCursor: true,
+  slidesPerView: 4,
 
-  // If we need pagination
+
+  mousewheel: {
+    sensitivity: 1,
+    eventsTarget: "photo-slider"
+  },
+
+
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
   },
 
-  // Navigation arrows
+
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
+  }
+
+
+})
+
+const cardsSlider = new Swiper('.cards-slider', {
+
+  // loop: true,
+  // slideToClickedSlide: true,
+  slidesPerView: 2.5,
+
+  grabCursor: true,
+  mousewheel: {
+    sensitivity: 1,
+    eventsTarget: "cards-slider"
   },
 
 })

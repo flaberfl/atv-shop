@@ -1,18 +1,28 @@
 .instruction {
   margin-bottom: 8rem;
   order: 1;
+
 }
 
 .instruction__items {
   display: flex;
   padding: 4rem 0 4.7rem;
-
+  
   background-color: $background;
+  
+  &:hover {
+    
+    .instruction__item {
+      transform: scale(1.02);
+    }
+  }
 }
 
 .instruction__item {
   text-align: center;
-
+  
+  transition: transform .2s linear;
+  
   img {
     margin-bottom: 2.6rem;
   }

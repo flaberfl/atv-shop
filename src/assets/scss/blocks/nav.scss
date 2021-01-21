@@ -3,14 +3,28 @@
   top: 0;
 }
 
+.nav__list {
+
+  &--rout {
+
+    &>.nav__item {
+      padding-left: 6rem;
+    }
+  }
+}
+
 .nav__item {
+  display: flex;
   padding-left: 12.3rem;
+  height: 8.1rem;
+  align-items: center;
 
   cursor: pointer;
 
   font-size: 1.8rem;
   font-weight: 700;
-  line-height: 8rem;
+  // line-height: 8rem;
+  line-height: 2.45rem;
 
   a {
     display: block;
