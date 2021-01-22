@@ -37,7 +37,7 @@ const photoSlider = new Swiper('.photo-slider', {
 
 const cardsSlider = new Swiper('.cards-slider', {
 
-  // loop: true,
+  loop: true,
   // slideToClickedSlide: true,
   slidesPerView: 2.5,
 

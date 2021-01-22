@@ -1,6 +1,6 @@
-.cards {
-  overflow: hidden;
-}
+// .cards {
+//   overflow: hidden;
+// }
 
 .cards-slider {
   margin-left: -2rem;
@@ -12,9 +12,8 @@
   width: 3.51rem;
   align-items: center;
 
-
-
   background: #E7E7E7;
+  background: rgba(231, 231, 231, .5);
 
   color: $primary;
 
@@ -32,9 +31,9 @@
 
     color: $black;
 
-    &:first-child {
-      margin-left: 2.6rem;
-    }
+    // &:first-child {
+    //   margin-left: 2.6rem;
+    // }
   }
 
   input {
