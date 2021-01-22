@@ -90,8 +90,7 @@ title: О маршруте
           <div class="cards-slider__slide swiper-slide" data-id="selectItem_3">
             <input class="swipe__input" id="radio-1" type="radio" name="swipetabs">
             <label class="swipe__label" for="radio-1">Квадроцикл Yamakasi RT 7000</label>
-          </div>
-
+          </div>`
         </div><!-- ./swiper-wrapper -->
       </div><!-- ./swiper-container -->
 
@@ -101,135 +100,80 @@ title: О маршруте
 
     <div class="cards__content">
 
-      <div class="route__select-card active-card-tab" id="selectItem_1">
 
-        <div class="select-card-img">
-          <img src="{% static static_prefix|add:'../img/atv__img.jpg' %}" alt="">
-          <div class="category__item-top-title">Квадроциклы</div>
+      <div class="category__item">
+
+        <div class="category__item-image">
+          <img src="assets/images/atv.jpg" alt="Квадроцикл">
+          <div class="category__item-subtext">Квадроциклы</div>
         </div>
 
-        <div class="select-card-description">
-          <div class="select-card-title">Квадроцикл Yamakasi RT 3000</div>
-          <div class="select-card-content">
-            <div class="select-card-text-line">
-              <img src="{% static static_prefix|add:'../img/svg/gridicons_time-select.svg' %}" alt="">
+        <div class="category__item-box">
+          <h3 class="category__title">Квадроцикл Yamakasi RT 3000</h3>
+
+          <ul class="category__item-list">
+
+            <li class="category__item-row">
+              <img src="assets/images/svg/gridicons_time.svg" alt="">
               <p>Время катания: 1 час</p>
-            </div>
-            <div class="select-card-text-line">
-              <img src="{% static static_prefix|add:'../img/svg/max-speed-select.svg' %}" alt="">
+            </li>
+            <div class="category__item-row">
+              <img src="assets/images/svg/speed.svg" alt="">
               <p>Максимальная скорость: 99 км.ч</p>
             </div>
-            <div class="select-card-text-line">
-              <img src="{% static static_prefix|add:'../img/svg/road-select.svg' %}" alt="">
-              <p>В наличии: <span class="num-item">2</span></p>
+            <div class="category__item-row">
+              <img src="assets/images/svg/fa-solid_route.svg" alt="">
+              <p>В наличии: 2</p>
             </div>
+
+          </ul>
+
+          <p class="cards__select-item">Выберите количество</p>
+          <div class="category__item-bottom">
+            <div class="category__item-price category__item-price--select">2 500 р</div>
+            <a class="btn btn--cards" href="#">1 квадроцикл</a>
           </div>
-          <div class="select-button-title">Выберите количество</div>
-
-          <div class="select is-active">
-
-            <div class="select__header">
-              <div class="select-card-button select__current">
-                <p class="card-button-price">2 500 р</p>
-                <div class="button category__button select-button">1 квадроцикл</div>
-                <img class="select-svg" src="{% static static_prefix|add:'../img/svg/arr-small-down.svg' %}" alt="">
-              </div>
-
-            </div>
-
-            <div class="select__body">
-
-              <div class="select-card-button">
-                <p class="card-button-price">5 000 р</p>
-                <div class="button category__button select-button">2 квадроцикл</div>
-              </div>
-
-              <div class="select-card-button">
-                <p class="card-button-price">7 500 р</p>
-                <div class="button category__button select-button">3 квадроцикл</div>
-              </div>
-
-            </div> <!-- select__body -->
-
-          </div> <!-- select -->
-
-
 
         </div>
 
       </div>
+      <!-- <div class="category__item">
 
-      <div class="route__select-card" id="selectItem_2">
-
-        <div class="select-card-img">
-          <img src="{% static static_prefix|add:'../img/atv__img.jpg' %}" alt="">
-          <div class="category__item-top-title">Квадроциклы</div>
+        <div class="category__item-image">
+          <img src="assets/images/atv.jpg" alt="Квадроцикл">
+          <div class="category__item-subtext">Квадроциклы</div>
         </div>
 
-        <div class="select-card-description">
-          <div class="select-card-title">Квадроцикл Yamakasi RT 5000</div>
-          <div class="select-card-content">
-            <div class="select-card-text-line">
-              <img src="{% static static_prefix|add:'../img/svg/gridicons_time-select.svg' %}" alt="">
+        <div class="category__item-box">
+          <h3 class="category__title">Квадроцикл Yamakasi RT 3000</h3>
+
+          <ul class="category__item-list">
+
+            <li class="category__item-row">
+              <img src="assets/images/svg/gridicons_time.svg" alt="">
               <p>Время катания: 1 час</p>
-            </div>
-            <div class="select-card-text-line">
-              <img src="{% static static_prefix|add:'../img/svg/max-speed-select.svg' %}" alt="">
+            </li>
+            <div class="category__item-row">
+              <img src="assets/images/svg/fa-solid_route.svg" alt="">
               <p>Максимальная скорость: 99 км.ч</p>
             </div>
-            <div class="select-card-text-line">
-              <img src="{% static static_prefix|add:'../img/svg/road-select.svg' %}" alt="">
-              <p>В наличии: <span class="num-item">2</span></p>
+            <div class="category__item-row">
+              <img src="assets/images/svg/placeholder.svg" alt="">
+              <p>Московская область, деревня Грибки (Дмитровское шоссе, 5 км от МКАД)</p>
             </div>
-          </div>
-          <div class="select-button-title">Выберите количество</div>
 
-          <div class="select-card-button">
-            <p class="card-button-price">2 500 р</p>
-            <div class="button category__button select-button">
-              <a href="service_list">1 квадроцикл</a>
-            </div>
+          </ul>
+
+          <div class="category__item-bottom">
+            <p class="category__item-price">2 500 р</p>
+            <a class="btn btn--category" href="routing.html">О маршруте</a>
           </div>
+
         </div>
 
-      </div>
+      </div> -->
 
-      <div class="route__select-card" id="selectItem_3">
-
-        <div class="select-card-img">
-          <img src="{% static static_prefix|add:'../img/atv__img.jpg' %}" alt="">
-          <div class="category__item-top-title">Квадроциклы</div>
-        </div>
-
-        <div class="select-card-description">
-          <div class="select-card-title">Квадроцикл Yamakasi RT 7000</div>
-          <div class="select-card-content">
-            <div class="select-card-text-line">
-              <img src="{% static static_prefix|add:'../img/svg/gridicons_time-select.svg' %}" alt="">
-              <p>Время катания: 1 час</p>
-            </div>
-            <div class="select-card-text-line">
-              <img src="{% static static_prefix|add:'../img/svg/max-speed-select.svg' %}" alt="">
-              <p>Максимальная скорость: 99 км.ч</p>
-            </div>
-            <div class="select-card-text-line">
-              <img src="{% static static_prefix|add:'../img/svg/road-select.svg' %}" alt="">
-              <p>В наличии: <span class="num-item">2</span></p>
-            </div>
-          </div>
-          <div class="select-button-title">Выберите количество</div>
-
-          <div class="select-card-button">
-            <p class="card-button-price">2 500 р</p>
-            <div class="button category__button select-button">
-              <a href="service_list">1 квадроцикл</a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </div> <!-- route__select-cards -->
+    </div> <!-- ./cards__content -->
 
 
 
