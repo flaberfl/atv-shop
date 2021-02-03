@@ -12,7 +12,7 @@ const photoSlider = new Swiper('.photo-slider', {
   loop: true,
   slideToClickedSlide: true,
   grabCursor: true,
-  slidesPerView: 4,
+  // slidesPerView: 4,
 
 
   mousewheel: {
@@ -40,6 +40,7 @@ const cardsSlider = new Swiper('.cards-slider', {
   loop: true,
   // slideToClickedSlide: true,
   slidesPerView: 2.5,
+  slidesPerView: 'auto',
 
   grabCursor: true,
   mousewheel: {

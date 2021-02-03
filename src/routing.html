@@ -77,20 +77,23 @@ title: О маршруте
       <div class="cards-slider swiper-container">
         <div class="cards-slider__wrapper swiper-wrapper">
 
-          <div class="cards-slider__slide swiper-slide is-active" data-id="selectItem_1">
-            <input class="swipe__input" id="radio-1" type="radio" name="swipetabs" value="1" checked>
-            <label class="swipe__label" for="radio-1">Квадроцикл Yamakasi RT 3000</label>
+          <div class="cards-slider__slide swiper-slide" data-id="selectItem_1">
+            <p>Квадроцикл Yamakasi RT 3000</p>
           </div>
 
           <div class="cards-slider__slide swiper-slide" data-id="selectItem_2">
-            <input class="swipe__input" id="radio-1" type="radio" name="swipetabs">
-            <label class="swipe__label" for="radio-1">Квадроцикл Yamakasi RT 5000</label>
+        
+            <p>Квадроцикл Yamakasi RT 3000</p>
+            <!-- <input class="swipe__input" id="radio-1" type="radio" name="swipetabs">
+            <label class="swipe__label" for="radio-1">Квадроцикл Yamakasi RT 5000</label> -->
           </div>
 
           <div class="cards-slider__slide swiper-slide" data-id="selectItem_3">
-            <input class="swipe__input" id="radio-1" type="radio" name="swipetabs">
-            <label class="swipe__label" for="radio-1">Квадроцикл Yamakasi RT 7000</label>
-          </div>`
+           
+            <p>Квадроцикл Yamakasi RT 3000</p>
+            <!-- <input class="swipe__input" id="radio-1" type="radio" name="swipetabs">
+            <label class="swipe__label" for="radio-1">Квадроцикл Yamakasi RT 7000</label> -->
+          </div>
         </div><!-- ./swiper-wrapper -->
       </div><!-- ./swiper-container -->
 
@@ -128,10 +131,23 @@ title: О маршруте
 
           </ul>
 
-          <p class="cards__select-item">Выберите количество</p>
+          <p class="cards__select-text">Выберите количество</p>
           <div class="category__item-bottom">
+
             <div class="category__item-price category__item-price--select">2 500 р</div>
-            <a class="btn btn--cards" href="#">1 квадроцикл</a>
+
+            <ul class="cards__select-list">
+              <li class="cards__select-item">
+                <div class="btn btn--cards">1 квадроцикла</div>
+                <ul class="cards__select-sublist">
+                  <li class="cards__select-subitem">
+                    <div class="btn btn--cards">2 квадроцикла</div>
+                  <li class="cards__select-subitem">
+                    <div class="btn btn--cards">3 квадроцикла</div>
+                </ul>
+              </li>
+            </ul>
+
           </div>
 
         </div>

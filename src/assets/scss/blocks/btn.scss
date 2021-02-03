@@ -47,22 +47,6 @@
     font-weight: 400;
     letter-spacing: -.5px;
 
-    // &:before {
-    //   position: absolute;
-    //   content: "";
-    //   width: 20rem;
-    //   height: 5.2rem;
-    //   background: $white;
-    //   border-radius: 36px 0px 0px 36px;
-    //   top: 50%;
-    //   right: 8rem;
-
-    //   cursor: default;
-
-    //   transform: translateY(-50%);
-    //   z-index: -1;
-    // }
-
     &:after {
       display: block;
       position: absolute;
@@ -70,12 +54,22 @@
       width: 18px;
       height: 18px;
       top: 50%;
+      margin-top: 1px;
       right: 3rem;
 
       background-image: url(../images/svg/arr-right.svg);
       background-repeat: no-repeat;
 
       transform: translateY(-50%);
+    }
+
+  }
+
+  &--category {
+    margin-left: 9.8rem;
+
+    &:hover {
+      transform: translateX(6%);
     }
   }
 
@@ -84,5 +78,12 @@
     padding-right: 8rem;
     margin-left: 10.2rem;
     letter-spacing: 0;
+
+    &:after {
+      margin-top: .65rem;
+      right: 5rem;
+
+      background-image: url(../images/svg/arr-down.svg);
+    }
   }
 }

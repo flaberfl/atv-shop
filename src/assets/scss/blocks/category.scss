@@ -149,30 +149,17 @@
 
 .category__item-bottom {
   position: relative;
-  display: flex;
-  // margin-left: 2.2rem;
-  align-items: center;
-
-  transition: transform .2s linear;
-
-  &:hover {
-    transform: translateX(1%);
-  }
 }
 
 .category__item-price {
   position: absolute;
-  margin-right: 1.6rem;
   padding: 0 10rem 0 2.4rem;
   
   line-height: 5.2rem;
-
-  // left: -2rem;
 
   font-size: 16px;
   font-weight: 800;
 
   background: $white;
   border-radius: $btn-radius;
-
 }
