@@ -30,7 +30,8 @@
   }
 }
 
-.category__items {
+.category__items,
+.category__item--cards {
   display: none;
   flex-direction: column;
 
@@ -70,6 +71,11 @@
 
   &:nth-child(7) {
     order: 6;
+  }
+
+  &--cards {
+    display: none;
+    flex-direction: row;
   }
 
 }
@@ -154,7 +160,7 @@
 .category__item-price {
   position: absolute;
   padding: 0 10rem 0 2.4rem;
-  
+
   line-height: 5.2rem;
 
   font-size: 16px;

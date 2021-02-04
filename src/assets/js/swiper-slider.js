@@ -14,6 +14,10 @@ const photoSlider = new Swiper('.photo-slider', {
   grabCursor: true,
   // slidesPerView: 4,
 
+  autoplay: {
+    delay: 1000,
+  },
+
 
   mousewheel: {
     sensitivity: 1,
@@ -37,8 +41,11 @@ const photoSlider = new Swiper('.photo-slider', {
 
 const cardsSlider = new Swiper('.cards-slider', {
 
-  loop: true,
-  // slideToClickedSlide: true,
+  autoplay: {
+    delay: 5000,
+  },
+  stopOnLastSlide: true,
+
   slidesPerView: 2.5,
   slidesPerView: 'auto',
 

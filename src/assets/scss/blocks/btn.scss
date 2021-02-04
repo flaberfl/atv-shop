@@ -13,6 +13,12 @@
   border-radius: $btn-radius;
 
   transition: transform .2s linear;
+  // transition: background-color .3s linear;
+  
+
+  &:hover {
+    background: darken($btn-color, 1%);
+  }
 
   &--select {
     padding: 1.5rem 2.2rem;
@@ -85,5 +91,7 @@
 
       background-image: url(../images/svg/arr-down.svg);
     }
+
+
   }
 }

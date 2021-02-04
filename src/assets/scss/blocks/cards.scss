@@ -50,6 +50,7 @@
 }
 
 .cards__select-list {
+  cursor: pointer;
 
   &:hover {
     .cards__select-sublist {
@@ -58,14 +59,34 @@
 
     .btn--cards {
       &:after {
-        transform: rotate(-180deg);
+        margin: 0;
+        transform: scaleY(-1);
+        top: 25%;
       }
     }
-
   }
 }
 
 .cards__select-sublist {
   display: none;
   position: absolute;
+  margin-left: auto;
+
+  li {
+    margin-top: 1rem;
+  }
+
+  &>.btn--cards {
+    &:after {
+      display: none;
+    }
+
+    &:hover {
+      &:after {
+        display: block;
+      }
+
+    }
+  }
+
 }
