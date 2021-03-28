@@ -1,17 +1,29 @@
 .gift {
   margin-bottom: 8rem;
+  max-width: 80rem;
+  // margin-left: auto;
+  // margin-right: auto;
+
   order: 4;
 }
 
 .gift__content {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+
 }
 
 .gift__column-left {
   flex-basis: 50%;
 
   background-color: $background;
+
+  @media (max-width: $mobile) {
+
+    margin: 0 auto;
+
+  }
 }
 
 .gift__preview-inner {
@@ -71,5 +83,11 @@
 
   img {
     padding: 0;
+  }
+
+  @media (max-width: $mobile) {
+
+    margin: 0 auto;
+
   }
 }

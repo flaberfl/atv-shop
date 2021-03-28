@@ -1,12 +1,19 @@
-.seo__content-img {
-  margin-bottom: 5rem;
-}
-
 .seo__content {
   margin-bottom: 8rem;
 }
 
+.seo__content-img {
+  margin-bottom: 5rem;
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .seo__content-text {
+  max-width: 80rem;
+  margin: 0 auto;
+
   font-size: 1.4rem;
   font-weight: 400;
   line-height: $line-height-text;

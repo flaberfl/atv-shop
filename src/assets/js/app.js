@@ -35,3 +35,4 @@ for (let i = 0; i < navLinkCards.length; i++) {
     isActive([navLinkCards, itemsCards], i)
   })
 }
+

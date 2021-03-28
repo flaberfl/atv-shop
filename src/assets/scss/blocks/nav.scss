@@ -15,10 +15,9 @@
 
 .nav__item {
   display: flex;
-  padding-left: 12.3rem;
+  justify-content: center;
   height: 8.1rem;
   align-items: center;
-
   cursor: pointer;
 
   font-size: 1.8rem;
@@ -43,8 +42,22 @@
     }
   }
 
+  &--rout {
+    justify-content: start;
+  }
+
   &.is-active {
     background-color: $background;
+  }
+
+  @media (max-width: $tablet-lg) {
+    font-size: 1.6rem;
+  }
+
+  @media (max-width: $tablet-sm) {
+    justify-content: start;
+
+    font-size: 3.2rem;
   }
 
 }

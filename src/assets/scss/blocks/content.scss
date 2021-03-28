@@ -10,4 +10,10 @@
   font-size: 3.2rem;
   font-weight: 800;
   letter-spacing: -.2px;
+
+  @media (max-width: $tablet-sm) {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
 }

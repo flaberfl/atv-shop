@@ -1,4 +1,8 @@
 .sidebar {
   width: $sidebar-width;
   padding-bottom: 2rem;
+  
+  @media (max-width: $tablet-sm) {
+    display: none;
+  }
 }

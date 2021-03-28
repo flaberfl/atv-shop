@@ -9,6 +9,10 @@
     top: .6rem;
   }
 
+  @media (max-width: $mobile) {
+    display: none; 
+  }
+
 }
 
 .phone__num {

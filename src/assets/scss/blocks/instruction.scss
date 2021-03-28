@@ -2,6 +2,12 @@
   margin-bottom: 8rem;
   order: 1;
 
+  @media (max-width: $tablet-sm)  {
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 }
 
 .instruction__items {
@@ -9,6 +15,7 @@
   padding: 4rem 0 4.7rem;
   
   background-color: $background;
+
   
   &:hover {
     
@@ -16,9 +23,16 @@
       transform: scale(1.02);
     }
   }
+
+  @media (max-width: $mobile) {
+    flex-wrap: wrap;
+  } 
+
+
 }
 
 .instruction__item {
+
   text-align: center;
   
   transition: transform .2s linear;
@@ -35,4 +49,18 @@
     font-weight: 400;
     line-height: $line-height-text;
   }
+
+  @media (max-width: $mobile) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 2rem;
+    margin: 0 auto;
+
+    // &:last-child {
+    //   width: 100%;
+    // }
+  }
+
 }

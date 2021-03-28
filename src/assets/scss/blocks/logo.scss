@@ -2,6 +2,10 @@
   display: flex;
   padding-top: 3.8rem;
   align-items: center;
+
+  @media (max-width: $mobile) {
+    margin: 0 auto;
+  }
 }
 .logo__link {
   display: block;

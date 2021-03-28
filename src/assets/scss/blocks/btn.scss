@@ -14,7 +14,7 @@
 
   transition: transform .2s linear;
   // transition: background-color .3s linear;
-  
+
 
   &:hover {
     background: darken($btn-color, 1%);
@@ -67,6 +67,13 @@
       background-repeat: no-repeat;
 
       transform: translateY(-50%);
+
+      @media (max-width: $mobile-sm) {
+
+        display: none;
+
+      }
+
     }
 
   }
@@ -77,6 +84,8 @@
     &:hover {
       transform: translateX(6%);
     }
+
+
   }
 
   &--cards {
