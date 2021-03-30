@@ -58,6 +58,10 @@
 }
 
 .category__items {
+
+  &--visible {
+    display: flex;
+  }
   
   @media (max-width: $mobile) {
     align-items: center;
@@ -67,8 +71,7 @@
 .category__item {
   display: flex;
   margin-bottom: 8rem;
-  justify-content: center;
-  max-width: 80rem;
+  // justify-content: center;
 
   &:nth-child(1) {
     order: 0;

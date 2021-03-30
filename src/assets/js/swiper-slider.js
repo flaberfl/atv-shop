@@ -53,15 +53,15 @@ const cardsSlider = new Swiper('.cards-slider', {
   mousewheel: {
     sensitivity: 1,
     eventsTarget: "cards-slider"
-  },
-
-  breakpoints: {
-    991: {
-      slidesPerView: 2,
-    },
-    1366: {
-      slidesPerView: 2.5,
-    },
   }
+
+  // breakpoints: {
+  //   991: {
+  //     slidesPerView: 2,
+  //   },
+  //   1366: {
+  //     slidesPerView: 2.5,
+  //   },
+  // }
 
 })
