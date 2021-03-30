@@ -6,10 +6,7 @@
 .nav__list {
 
   &--rout {
-
-    &>.nav__item {
-      padding-left: 6rem;
-    }
+    text-align: center;
   }
 }
 
@@ -42,22 +39,22 @@
     }
   }
 
-  &--rout {
-    justify-content: start;
-  }
+  // &--rout {
+  //   justify-content: start;
+  // }
 
   &.is-active {
     background-color: $background;
   }
 
-  @media (max-width: $tablet-lg) {
+  @media (max-width: $desktop-sm) {
     font-size: 1.6rem;
   }
 
-  @media (max-width: $tablet-sm) {
-    justify-content: start;
+  // @media (max-width: $tablet) {
+  //   justify-content: start;
 
-    font-size: 3.2rem;
-  }
+  //   font-size: 3.2rem;
+  // }
 
 }

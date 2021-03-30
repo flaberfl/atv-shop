@@ -4,7 +4,8 @@
   overflow: hidden;
 
   img {
-    width: 100%;
+    display: block;
+    max-width: 100%;
   }
 
   img:nth-child(2) {

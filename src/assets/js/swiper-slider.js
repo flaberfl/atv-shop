@@ -55,4 +55,13 @@ const cardsSlider = new Swiper('.cards-slider', {
     eventsTarget: "cards-slider"
   },
 
+  breakpoints: {
+    991: {
+      slidesPerView: 2,
+    },
+    1366: {
+      slidesPerView: 2.5,
+    },
+  }
+
 })

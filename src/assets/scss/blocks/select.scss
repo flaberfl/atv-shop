@@ -1,12 +1,12 @@
 .select__date {
-  
+
   margin-bottom: 6rem;
 
   a {
     margin-right: 1.2rem;
   }
-}
 
-// .select__date-group {
-//   text-align: center;
-// }`
+  @media (max-width: $tablet) {
+    text-align: center;
+  }
+}

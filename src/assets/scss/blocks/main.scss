@@ -1,13 +1,11 @@
 .main {
-  padding: 0 10rem;
-  width: 100%;
-  max-width: 100rem;
+  padding: 0 1.5rem;
+  // width: 100%;
+  max-width: 80.3rem;
+  margin: 0 auto;
 
-  @media (max-width: $tablet-lg-2) {
-    padding-left: 2rem;
-  }
+  @media (max-width: $mobile-sm) {
+    padding: 0;
+  } 
 
-  @media (max-width: $tablet-lg) {
-    padding-right: 2rem;
-  }
 }

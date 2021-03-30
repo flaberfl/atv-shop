@@ -7,23 +7,26 @@
 
 <body>
 
-  <div class="container">
-    {{> header }}
+  <div class="page" id="page">
 
-    <div class="content">
-      {{> sidebar }}
+    <div class="container">
+      {{> header }}
 
-      <div class="main">
-        {{> body }}
+      <div class="content">
+        {{> sidebar }}
+
+        <div class="main">
+          {{> body }}
+        </div>
+
       </div>
+
+      {{> footer }}
 
     </div>
 
-
-
   </div>
 
-  {{> footer }}
 
 
   <script src="assets/js/app.js"></script>
