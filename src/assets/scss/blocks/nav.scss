@@ -1,6 +1,15 @@
 .nav {
   position: sticky;
   top: 0;
+
+  z-index: 999;
+
+    @media (max-width: $tablet) {
+    position: fixed;
+    left: 3rem;
+    
+  }
+
 }
 
 .nav__list {
@@ -51,10 +60,10 @@
     font-size: 1.6rem;
   }
 
-  // @media (max-width: $tablet) {
-  //   justify-content: start;
-
-  //   font-size: 3.2rem;
-  // }
+  @media (max-width: $tablet) {
+    justify-content: start;
+   
+    // font-size: 3.2rem;
+  }
 
 }
