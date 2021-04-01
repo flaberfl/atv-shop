@@ -4,12 +4,19 @@
 
   z-index: 999;
 
-    @media (max-width: $tablet) {
-    position: fixed;
+  @media (max-width: $tablet) {
+    position: absolute;
     left: 3rem;
-    
-  }
+    transform: translate3d(-100%, 0, 0);
 
+    overflow: auto;
+
+    transition: transform 1s linear;
+
+    .show-sidebar & {
+      transform: translate3d(0, 0, 0);
+    }
+  }
 }
 
 .nav__list {
@@ -62,7 +69,7 @@
 
   @media (max-width: $tablet) {
     justify-content: start;
-   
+
     // font-size: 3.2rem;
   }
 

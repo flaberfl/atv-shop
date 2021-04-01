@@ -32,6 +32,8 @@
   &:before,
   &:after {
     content: "";
+
+    transition: background-color .2s linear
   }
 
   &:before {
@@ -56,6 +58,7 @@
     &:before,
     &:after {
       top: 50%;
+      background-color: $white;
     }
 
     &:before {
